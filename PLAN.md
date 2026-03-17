@@ -1,9 +1,11 @@
 # Plan: אופה אופה — Catering Catalog & WhatsApp Order Site
 
 ## Overview
+
 A static single-page Hebrew (RTL) website for a catering company. Users browse a product catalog with filters, build an order cart, and send the order via WhatsApp. No backend, no frameworks — plain HTML/CSS/JS.
 
 ## Tech Stack
+
 - HTML5, CSS3 (Grid/Flexbox, RTL), Vanilla JS (ES6)
 - Product data in `products.json`
 - Cart in `localStorage`
@@ -11,6 +13,7 @@ A static single-page Hebrew (RTL) website for a catering company. Users browse a
 - Static hosting (GitHub Pages / Netlify / any)
 
 ## Decisions
+
 - Hebrew-only UI, RTL layout
 - Placeholder images for products (no real photos yet)
 - WhatsApp number: 0542041964 → international format: 972542041964
@@ -18,6 +21,7 @@ A static single-page Hebrew (RTL) website for a catering company. Users browse a
 - Single page, no routing
 
 ## Files to Create
+
 - `index.html` — single page: header, filters bar, product grid, cart sidebar, footer
 - `styles.css` — responsive layout, RTL, mobile-first
 - `app.js` — catalog rendering, filters, cart logic, WhatsApp integration
@@ -27,6 +31,7 @@ A static single-page Hebrew (RTL) website for a catering company. Users browse a
 ## Steps
 
 ### Phase 1 — Foundation (steps 1-3)
+
 1. Create `index.html` with semantic structure:
    - `<header>` — logo/business name "אופה אופה", tagline
    - `<section id="filters">` — category buttons, price range, search input
@@ -47,6 +52,7 @@ A static single-page Hebrew (RTL) website for a catering company. Users browse a
    - Prices in ILS (₪)
 
 ### Phase 2 — Catalog & Filters (steps 4-5)
+
 4. In `app.js`: fetch `products.json`, render product cards into `#catalog` grid
    - Each card: image, name, description, price, category tag, "הוסף להזמנה" button
 5. Implement filter logic:
@@ -56,6 +62,7 @@ A static single-page Hebrew (RTL) website for a catering company. Users browse a
    - All filters combine (intersection)
 
 ### Phase 3 — Cart (steps 6-8)
+
 6. "הוסף להזמנה" button on each card → adds item to cart state (JS object/array)
    - If item already in cart, increment quantity
    - Show brief visual feedback (e.g. button text change, badge update)
@@ -70,6 +77,7 @@ A static single-page Hebrew (RTL) website for a catering company. Users browse a
    - Empty state message when cart is empty
 
 ### Phase 4 — WhatsApp Order (steps 9-10)
+
 9. "שלח הזמנה" button builds formatted message string:
    ```
    הזמנה חדשה מאופה אופה 🍰
@@ -84,6 +92,7 @@ A static single-page Hebrew (RTL) website for a catering company. Users browse a
     - Works on both mobile (opens WhatsApp app) and desktop (opens WhatsApp Web)
 
 ## Verification
+
 1. Open `index.html` with VS Code Live Server — catalog renders with all products
 2. Click category filters → only matching products shown; type in search → filters by name
 3. Add items to cart → badge updates, sidebar shows items with correct quantities and prices
