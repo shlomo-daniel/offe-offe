@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "עוגת שוקולד",
+    "description": "עוגת שוקולד עשירה עם ציפוי גנאש מריר",
+    "price": 85,
+    "category": "עוגות",
+    "image": "assets/placeholder.svg"
+  },
+  {
+    "id": 2,
+    "name": "עוגת גבינה",
+    "description": "עוגת גבינה קלאסית אפויה על בסיס פירורים",
+    "price": 90,
+    "category": "עוגות",
+    "image": "assets/placeholder.svg"
+  },
+  {
+    "id": 3,
+    "name": "עוגת גזר",
+    "description": "עוגת גזר עסיסית עם קרם שמנת",
+    "price": 75,
+    "category": "עוגות",
+    "image": "assets/placeholder.svg"
+  },
+  {
+    "id": 4,
+    "name": "בורקס גבינה",
+    "description": "בורקס פריך במילוי גבינות בולגרית וצפתית",
+    "price": 12,
+    "category": "מאפים",
+    "image": "assets/placeholder.svg"
+  },
+  {
+    "id": 5,
+    "name": "קרואסון שקדים",
+    "description": "קרואסון חמאה במילוי קרם שקדים",
+    "price": 18,
+    "category": "מאפים",
+    "image": "assets/placeholder.svg"
+  },
+  {
+    "id": 6,
+    "name": "לחמניית בריוש",
+    "description": "לחמנייה רכה ועשירה מבצק בריוש",
+    "price": 10,
+    "category": "מאפים",
+    "image": "assets/placeholder.svg"
+  },
+  {
+    "id": 7,
+    "name": "כריך טונה",
+    "description": "כריך טונה עם ביצה קשה, מלפפון וזיתים",
+    "price": 35,
+    "category": "כריכים",
+    "image": "assets/placeholder.svg"
+  },
+  {
+    "id": 8,
+    "name": "כריך חומוס ירקות",
+    "description": "כריך חומוס עם ירקות טריים וטחינה",
+    "price": 30,
+    "category": "כריכים",
+    "image": "assets/placeholder.svg"
+  },
+  {
+    "id": 9,
+    "name": "סלט קיסר",
+    "description": "סלט חסה רומית עם קרוטונים, פרמזן ורוטב קיסר",
+    "price": 42,
+    "category": "סלטים",
+    "image": "assets/placeholder.svg"
+  },
+  {
+    "id": 10,
+    "name": "סלט קינואה",
+    "description": "קינואה עם ירקות צלויים, עשבי תיבול ורוטב לימון",
+    "price": 45,
+    "category": "סלטים",
+    "image": "assets/placeholder.svg"
+  },
+  {
+    "id": 11,
+    "name": "לימונענע",
+    "description": "לימונענע טבעית מוגשת בכד ליטר",
+    "price": 25,
+    "category": "משקאות",
+    "image": "assets/placeholder.svg"
+  },
+  {
+    "id": 12,
+    "name": "מיץ תפוזים טבעי",
+    "description": "מיץ תפוזים סחוט טרי — ליטר",
+    "price": 28,
+    "category": "משקאות",
+    "image": "assets/placeholder.svg"
+  }
+]

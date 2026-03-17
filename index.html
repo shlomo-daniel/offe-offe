@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>אופה אופה | קייטרינג ומאפים</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-content">
+            <h1 class="logo">🍰 אופה אופה</h1>
+            <p class="tagline">קייטרינג, מאפים ומתוקים — טעם של בית</p>
+        </div>
+    </header>
+
+    <!-- Filters -->
+    <section class="filters-bar">
+        <div class="filters-content">
+            <div class="filter-group category-filters">
+                <button class="filter-btn active" data-category="הכל">הכל</button>
+                <button class="filter-btn" data-category="עוגות">עוגות</button>
+                <button class="filter-btn" data-category="מאפים">מאפים</button>
+                <button class="filter-btn" data-category="כריכים">כריכים</button>
+                <button class="filter-btn" data-category="סלטים">סלטים</button>
+                <button class="filter-btn" data-category="משקאות">משקאות</button>
+            </div>
+            <div class="filter-group search-sort">
+                <input type="text" id="searchInput" class="search-input" placeholder="חיפוש מוצר...">
+                <select id="sortSelect" class="sort-select">
+                    <option value="default">מיון</option>
+                    <option value="price-asc">מחיר: מהנמוך לגבוה</option>
+                    <option value="price-desc">מחיר: מהגבוה לנמוך</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catalog -->
+    <main class="catalog" id="catalog">
+        <!-- Product cards rendered by JS -->
+    </main>
+
+    <!-- Empty state -->
+    <div class="empty-catalog" id="emptyCatalog" style="display:none;">
+        <p>לא נמצאו מוצרים 😕</p>
+    </div>
+
+    <!-- Cart toggle button (floating) -->
+    <button class="cart-toggle-btn" id="cartToggleBtn" aria-label="פתח את סל ההזמנה">
+        🛒
+        <span class="cart-badge" id="cartBadge">0</span>
+    </button>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <aside class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h2>סל ההזמנה</h2>
+            <button class="cart-close-btn" id="cartCloseBtn" aria-label="סגור">✕</button>
+        </div>
+
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items rendered by JS -->
+        </div>
+
+        <div class="cart-empty" id="cartEmpty">
+            <p>ההזמנה ריקה</p>
+            <p>הוסיפו מוצרים מהתפריט 🍞</p>
+        </div>
+
+        <div class="cart-footer" id="cartFooter">
+            <div class="cart-total">
+                <span>סה״כ:</span>
+                <span id="cartTotal">₪0</span>
+            </div>
+            <button class="btn-whatsapp" id="sendOrderBtn">
+                📲 שלח הזמנה בוואטסאפ
+            </button>
+            <button class="btn-clear" id="clearCartBtn">
+                🗑️ נקה הזמנה
+            </button>
+        </div>
+    </aside>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>אופה אופה — קייטרינג ומאפים</p>
+        <p>📞 054-204-1964 &nbsp;|&nbsp; צרו קשר בוואטסאפ</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
