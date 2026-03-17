@@ -16,7 +16,7 @@ A static single-page Hebrew (RTL) website for a catering company. Users browse a
 
 - Hebrew-only UI, RTL layout
 - Placeholder images for products (no real photos yet)
-- WhatsApp number: 0542041964 → international format: 972542041964
+- WhatsApp number: 0505808069 → international format: 972505808069
 - No backend, no auth, no order history on server
 - Single page, no routing
 
@@ -87,7 +87,7 @@ A static single-page Hebrew (RTL) website for a catering company. Users browse a
    ─────────────
    סה"כ: ₪155
    ```
-10. Opens `https://wa.me/972542041964?text=<URI_encoded_message>`
+10. Opens `https://wa.me/972505808069?text=<URI_encoded_message>`
     - Uses `encodeURIComponent()` for the message text
     - Works on both mobile (opens WhatsApp app) and desktop (opens WhatsApp Web)
 

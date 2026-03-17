@@ -1,5 +1,5 @@
 // ===== State =====
-const WHATSAPP_NUMBER = "972542041964";
+const WHATSAPP_NUMBER = "972505808069";
 let products = [];
 let cart = JSON.parse(localStorage.getItem("ofa-cart") || "[]");
 let activeCategory = "הכל";
