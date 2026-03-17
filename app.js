@@ -73,7 +73,7 @@ function renderCatalog() {
   catalogEl.innerHTML = filtered
     .map((product) => {
       const inCart = cart.find((item) => item.id === product.id);
-      const btnText = inCart ? `✓ נוסף (${inCart.qty})` : "הוסף להזמנה";
+      const btnText = inCart ? `✓ נוסף (${inCart.qty})` : "הוספה לסל";
       const btnClass = inCart ? "btn-add added" : "btn-add";
 
       return `
@@ -111,6 +111,7 @@ function addToCart(productId) {
       id: product.id,
       name: product.name,
       price: product.price,
+      image: product.image,
       qty: 1,
     });
   }
@@ -181,6 +182,7 @@ function renderCart() {
     .map(
       (item) => `
     <div class="cart-item" data-id="${item.id}">
+      <img class="cart-item-thumb" src="${item.image || "assets/placeholder.svg"}" alt="${item.name}">
       <div class="cart-item-info">
         <div class="cart-item-name">${item.name}</div>
         <div class="cart-item-price">₪${item.price} ליחידה</div>

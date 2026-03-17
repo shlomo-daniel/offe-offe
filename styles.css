@@ -8,15 +8,15 @@
 }
 
 :root {
-  --clr-primary: #c0392b;
-  --clr-primary-dark: #96281b;
-  --clr-accent: #e67e22;
+  --clr-primary: #5d4037;
+  --clr-primary-dark: #4e342e;
+  --clr-accent: #c8a96e;
   --clr-bg: #fdf6f0;
   --clr-surface: #ffffff;
   --clr-text: #2c1810;
   --clr-text-light: #6b5348;
   --clr-border: #e8ddd6;
-  --clr-badge: #e74c3c;
+  --clr-badge: #c8a96e;
   --clr-whatsapp: #25d366;
   --clr-whatsapp-hover: #1da851;
   --radius: 12px;
@@ -44,24 +44,67 @@ body {
   direction: rtl;
 }
 
-/* ===== Header ===== */
-.site-header {
-  background: linear-gradient(135deg, var(--clr-primary), var(--clr-accent));
-  color: #fff;
+/* ===== Hero Banner ===== */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 360px;
+  background: url("assets/hero-bg.svg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(78, 52, 46, 0.75),
+    rgba(93, 64, 55, 0.6)
+  );
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
   text-align: center;
-  padding: 2.5rem 1rem 2rem;
+  color: #fff;
+  padding: 1rem;
 }
 
-.logo {
-  font-size: 2.5rem;
+.hero-title {
+  font-size: 2.4rem;
   font-weight: 800;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
-.tagline {
-  font-size: 1.1rem;
+.hero-subtitle {
+  font-size: 1.2rem;
   font-weight: 300;
   opacity: 0.9;
+  margin-bottom: 1.5rem;
+}
+
+.hero-cta {
+  display: inline-block;
+  background: var(--clr-accent);
+  color: #fff;
+  text-decoration: none;
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+  font-family: inherit;
+  font-size: 1.05rem;
+  font-weight: 700;
+  transition: var(--transition);
+  box-shadow: 0 4px 15px rgba(200, 169, 110, 0.4);
+}
+
+.hero-cta:hover {
+  background: #b8953e;
+  transform: translateY(-2px);
 }
 
 /* ===== Filters Bar ===== */
@@ -132,7 +175,7 @@ body {
 .search-input:focus {
   outline: none;
   border-color: var(--clr-primary);
-  box-shadow: 0 0 0 3px rgba(192, 57, 43, 0.1);
+  box-shadow: 0 0 0 3px rgba(93, 64, 55, 0.15);
 }
 
 .sort-select {
@@ -198,7 +241,7 @@ body {
   font-size: 0.75rem;
   font-weight: 700;
   color: var(--clr-primary);
-  background: rgba(192, 57, 43, 0.08);
+  background: rgba(93, 64, 55, 0.08);
   padding: 0.15rem 0.6rem;
   border-radius: 50px;
   margin-bottom: 0.5rem;
@@ -394,6 +437,15 @@ body {
   border-bottom: none;
 }
 
+.cart-item-thumb {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  object-fit: cover;
+  background: var(--clr-bg);
+  flex-shrink: 0;
+}
+
 .cart-item-info {
   flex: 1;
 }
@@ -465,7 +517,7 @@ body {
 
 .btn-remove:hover {
   color: var(--clr-badge);
-  background: rgba(231, 76, 60, 0.08);
+  background: rgba(93, 64, 55, 0.08);
 }
 
 /* ===== Cart Empty State ===== */
@@ -542,28 +594,58 @@ body {
 
 /* ===== Footer ===== */
 .site-footer {
-  text-align: center;
-  padding: 2rem 1rem;
-  color: var(--clr-text-light);
+  background: var(--clr-primary-dark);
+  color: #f5ebe0;
+  padding: 2.5rem 1rem 1rem;
+  margin-top: 3rem;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.footer-col h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--clr-accent);
+}
+
+.footer-col p {
   font-size: 0.9rem;
-  border-top: 1px solid var(--clr-border);
+  line-height: 1.8;
+  opacity: 0.9;
+}
+
+.footer-col a {
+  color: #f5ebe0;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.footer-col a:hover {
+  color: var(--clr-accent);
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
   margin-top: 2rem;
+  padding-top: 1rem;
+  font-size: 0.8rem;
+  opacity: 0.7;
 }
 
 .site-footer p + p {
-  margin-top: 0.3rem;
+  margin-top: 0;
 }
 
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
-  .logo {
-    font-size: 2rem;
-  }
-
-  .tagline {
-    font-size: 0.95rem;
-  }
-
   .filters-content {
     flex-direction: column;
     align-items: stretch;
@@ -626,6 +708,24 @@ body {
     width: 52px;
     height: 52px;
     font-size: 1.3rem;
+  }
+
+  .hero {
+    height: 240px;
+  }
+
+  .hero-title {
+    font-size: 1.6rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    text-align: center;
   }
 }
 

@@ -14,13 +14,15 @@
 
 <body>
 
-    <!-- Header -->
-    <header class="site-header">
-        <div class="header-content">
-            <h1 class="logo">🍰 אופה אופה</h1>
-            <p class="tagline">קייטרינג, מאפים ומתוקים — טעם של בית</p>
+    <!-- Hero Banner -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h2 class="hero-title">אופה אופה</h2>
+            <p class="hero-subtitle">קייטרינג, מאפים ומתוקים</p>
+            <a href="#catalog" class="hero-cta">לתפריט המלא</a>
         </div>
-    </header>
+    </section>
 
     <!-- Filters -->
     <section class="filters-bar">
@@ -64,7 +66,7 @@
     <div class="cart-overlay" id="cartOverlay"></div>
     <aside class="cart-sidebar" id="cartSidebar">
         <div class="cart-header">
-            <h2>סל ההזמנה</h2>
+            <h2>סל ההזמנה שלך</h2>
             <button class="cart-close-btn" id="cartCloseBtn" aria-label="סגור">✕</button>
         </div>
 
@@ -93,8 +95,26 @@
 
     <!-- Footer -->
     <footer class="site-footer">
-        <p>אופה אופה — קייטרינג ומאפים</p>
-        <p>📞 050-580-8069 &nbsp;|&nbsp; צרו קשר בוואטסאפ</p>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>🍰 אופה אופה</h3>
+                <p>קייטרינג, מאפים ומתוקים</p>
+            </div>
+            <div class="footer-col">
+                <h3>צרו קשר</h3>
+                <p>📞 050-580-8069</p>
+                <p>📲 <a href="https://wa.me/972505808069" target="_blank" rel="noopener noreferrer">שלחו הודעה
+                        בוואטסאפ</a></p>
+            </div>
+            <div class="footer-col">
+                <h3>שעות פעילות</h3>
+                <p>א׳–ה׳: 08:00–20:00</p>
+                <p>ו׳: 08:00–14:00</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 אופה אופה — כל הזכויות שמורות</p>
+        </div>
     </footer>
 
     <script src="app.js"></script>
