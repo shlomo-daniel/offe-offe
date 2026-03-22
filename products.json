@@ -5,7 +5,7 @@
     "description": "עוגת שוקולד עשירה עם ציפוי גנאש מריר",
     "price": 85,
     "category": "עוגות",
-    "image": "assets/placeholder.svg"
+    "image": "assets/products/1-עוגת-שוקולד.png"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "description": "עוגת גבינה קלאסית אפויה על בסיס פירורים",
     "price": 90,
     "category": "עוגות",
-    "image": "assets/placeholder.svg"
+    "image": "assets/products/2-עוגת-גבינה.png"
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@
     "description": "עוגת גזר עסיסית עם קרם שמנת",
     "price": 75,
     "category": "עוגות",
-    "image": "assets/placeholder.svg"
+    "image": "assets/products/3-עוגת-גזר.png"
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@
     "description": "בורקס פריך במילוי גבינות בולגרית וצפתית",
     "price": 12,
     "category": "מאפים",
-    "image": "assets/placeholder.svg"
+    "image": "assets/products/4-בורקס-גבינה.png"
   },
   {
     "id": 5,
@@ -37,7 +37,7 @@
     "description": "קרואסון חמאה במילוי קרם שקדים",
     "price": 18,
     "category": "מאפים",
-    "image": "assets/placeholder.svg"
+    "image": "assets/products/5-קרואסון-שקדים.png"
   },
   {
     "id": 6,
@@ -45,7 +45,7 @@
     "description": "לחמנייה רכה ועשירה מבצק בריוש",
     "price": 10,
     "category": "מאפים",
-    "image": "assets/placeholder.svg"
+    "image": "assets/products/6-לחמניית-בריוש.png"
   },
   {
     "id": 7,
@@ -53,7 +53,7 @@
     "description": "כריך טונה עם ביצה קשה, מלפפון וזיתים",
     "price": 35,
     "category": "כריכים",
-    "image": "assets/placeholder.svg"
+    "image": "assets/products/7-כריך-טונה.png"
   },
   {
     "id": 8,
@@ -61,7 +61,7 @@
     "description": "כריך חומוס עם ירקות טריים וטחינה",
     "price": 30,
     "category": "כריכים",
-    "image": "assets/placeholder.svg"
+    "image": "assets/products/8-כריך-חומוס-ירקות.png"
   },
   {
     "id": 9,
@@ -69,7 +69,7 @@
     "description": "סלט חסה רומית עם קרוטונים, פרמזן ורוטב קיסר",
     "price": 42,
     "category": "סלטים",
-    "image": "assets/placeholder.svg"
+    "image": "assets/products/9-סלט-קיסר.png"
   },
   {
     "id": 10,
@@ -77,7 +77,7 @@
     "description": "קינואה עם ירקות צלויים, עשבי תיבול ורוטב לימון",
     "price": 45,
     "category": "סלטים",
-    "image": "assets/placeholder.svg"
+    "image": "assets/products/10-סלט-קינואה.png"
   },
   {
     "id": 11,
@@ -85,7 +85,7 @@
     "description": "לימונענע טבעית מוגשת בכד ליטר",
     "price": 25,
     "category": "משקאות",
-    "image": "assets/placeholder.svg"
+    "image": "assets/products/11-לימונענע.png"
   },
   {
     "id": 12,
@@ -93,6 +93,6 @@
     "description": "מיץ תפוזים סחוט טרי — ליטר",
     "price": 28,
     "category": "משקאות",
-    "image": "assets/placeholder.svg"
+    "image": "assets/products/12-מיץ-תפוזים.png"
   }
 ]
